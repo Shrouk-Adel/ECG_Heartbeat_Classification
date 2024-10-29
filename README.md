@@ -10,6 +10,9 @@
     3. **Unclassified beat'**
     4. **Supraventricular premature or ectopic beat**
     5. **Fusion of ventricular and normal beat**
+
+![Heartbeat](https://github.com/user-attachments/assets/17bd1bbc-6268-46a2-beb6-0e8bb3a6a822)
+
     
 
     
