@@ -13,12 +13,57 @@ This app uses a machine learning model trained to classify different types of he
 
 ![Heartbeat](https://github.com/user-attachments/assets/17bd1bbc-6268-46a2-beb6-0e8bb3a6a822)
 
-    
+## Project Goal
+Maximize recall in heartbeat classification to ensure comprehensive detection of cardiac abnormalities, prioritizing the identification of potential heart conditions with minimal missed cases.
 
-    
+## Recall Performance Analysis
 
+### 1. Binary Classification (Logistic Regression)
+- **Overall Recall**:
+  - Class 0: 0.86
+  - Class 1: 0.77
+- **Key Challenge**: Lower recall for minority class (Class 1)
+- **Potential Impact**: Risk of missing critical cardiac events
 
+### 2. Multi-Class Classification: Recall Comparison
 
+#### XGBoost Classifier
+- **Recall Performance**:
+  - Class 0.0: 0.90
+  - Class 1.0: 0.97
+  - Class 2.0: 0.81
+  - Class 3.0: 0.99
+- **Observations**:
+  - Excellent recall for Classes 1.0 and 3.0
+  - Lowest recall for Class 2.0 (potential area of improvement)
 
+#### Random Forest
+- **Recall Performance**:
+  - Class 0.0: 0.92
+  - Class 1.0: 0.98
+  - Class 2.0: 0.80
+  - Class 3.0: 0.99
+- **Key Insights**:
+  - Consistently high recall for majority classes
+  - Class 2.0 remains a challenge with 0.80 recall
 
-### dataset : https://www.kaggle.com/datasets/shayanfazeli/heartbeat
+#### XGBoost Classifier (Alternative Implementation)
+- **Recall Performance**:
+  - Class 0.0: 0.93
+  - Class 1.0: 0.98
+  - Class 2.0: 0.89
+  - Class 3.0: 0.99
+- **Improvement Noted**:
+  - Slight increase in recall for Class 2.0
+  - Maintained high recall for other classes
+
+### 3. Convolutional Neural Network (1D Conv)
+- **Test Accuracy**: 0.9812
+- **Recall Focus**: Demonstrates strong overall performance
+ 
+## Deployment
+Streamlit Web Application: 
+https://ecgheart-96cdkvn77wrjcncbg2xcus.streamlit.app
+
+## Dataset 
+https://www.kaggle.com/datasets/shayanfazeli/heartbeat
