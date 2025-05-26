@@ -60,10 +60,6 @@ Maximize recall in heartbeat classification to ensure comprehensive detection of
 ### 3. Convolutional Neural Network (1D Conv)
 - **Test Accuracy**: 0.9812
 - **Recall Focus**: Demonstrates strong overall performance
- 
-## Deployment
-Streamlit Web Application: 
-https://ecgheart-96cdkvn77wrjcncbg2xcus.streamlit.app
 
 ## Dataset 
 https://www.kaggle.com/datasets/shayanfazeli/heartbeat
